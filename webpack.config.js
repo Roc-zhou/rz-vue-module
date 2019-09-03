@@ -24,12 +24,6 @@ module.exports = {
     open: false, //自定打开默认浏览器
   },
   plugins: [ // 插件
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: './index.html',
-      minify: true, //压缩
-      hash: false, //添加hash清除缓存
-    }),
     new VueLoaderPlugin(),
     new webpack.SourceMapDevToolPlugin()
   ],
@@ -61,4 +55,16 @@ module.exports = {
       }
     ]
   },
+  devtool: NODE_ENV === 'production' ? '#source-map' : '#eval-source-map'
+}
+
+if (NODE_ENV === 'development') {
+  module.exports.plugins = (module.exports.plugins || []).concat([
+    new HtmlWebpackPlugin({
+      filename: 'index.html',
+      template: './index.html',
+      minify: true, //压缩
+      hash: false, //添加hash清除缓存
+    }),
+  ])
 }

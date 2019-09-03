@@ -24,8 +24,7 @@ module.exports = {
     open: false, //自定打开默认浏览器
   },
   plugins: [ // 插件
-    new VueLoaderPlugin(),
-    new webpack.SourceMapDevToolPlugin()
+    new VueLoaderPlugin()
   ],
   module: {
     rules: [
@@ -55,7 +54,10 @@ module.exports = {
       }
     ]
   },
-  devtool: NODE_ENV === 'production' ? '#source-map' : '#eval-source-map'
+  devtool: NODE_ENV === 'production' ? '#source-map' : '#eval-source-map',
+  performance: {
+    hints: false
+  }
 }
 
 if (NODE_ENV === 'development') {

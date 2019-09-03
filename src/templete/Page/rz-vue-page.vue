@@ -2,26 +2,26 @@
   <div class="paging">
     <ul class="mo-paging">
       <li
-        :class="['paging-item', 'paging-item--prev', 'items-center', {'paging-item--disabled' : index === 1},'one']"
+        :class="['paging-item', 'paging-item--prev', 'items-center', {'paging-item-disabled' : index === 1},'one']"
         @click.stop="prev"
       >上一页</li>
       <li
-        :class="['paging-item', 'paging-item--first', 'items-center', {'paging-item--disabled' : index === 1},'two']"
+        :class="['paging-item', 'paging-item--first', 'items-center', {'paging-item-disabled' : index === 1},'two']"
         @click.stop="first"
       >首页</li>
-      <li :class="['paging-item', 'items-center', 'paging-item--more']" v-if="showPrevMore">...</li>
+      <li :class="['paging-item', 'items-center', 'paging-item-more']" v-if="showPrevMore">...</li>
       <li
-        :class="['paging-item', 'items-center', {'paging-item--current' : index === pager}]"
+        :class="['paging-item', 'items-center', {'paging-item-current' : index === pager}]"
         v-for="pager in pagers"
         @click.stop="go(pager)"
       >{{ pager }}</li>
-      <li :class="['paging-item', 'items-center', 'paging-item--more']" v-if="showNextMore">...</li>
+      <li :class="['paging-item', 'items-center', 'paging-item-more']" v-if="showNextMore">...</li>
       <li
-        :class="['paging-item', 'items-center', 'paging-item--last', {'paging-item--disabled' : index === pages},'two']"
+        :class="['paging-item', 'items-center', 'paging-item--last', {'paging-item-disabled' : index === pages},'two']"
         @click.stop="last"
       >尾页</li>
       <li
-        :class="['paging-item', 'items-center', 'paging-item--next', {'paging-item--disabled' : index === pages},'one']"
+        :class="['paging-item', 'items-center', 'paging-item--next', {'paging-item-disabled' : index === pages},'one']"
         @click.stop="next"
       >下一页</li>
     </ul>
@@ -119,7 +119,6 @@ export default {
         start: current - _offset,
         end: current + _offset
       };
-      //-1, 3
       if (offset.start < 1) {
         offset.end = offset.end + (1 - offset.start);
         offset.start = 1;
@@ -189,21 +188,21 @@ export default {
   .paging-item:first-child {
     margin-left: 0;
   }
-  .paging-item--disabled,
-  .paging-item--more {
+  .paging-item-disabled,
+  .paging-item-more {
     background-color: #fff;
     color: #505050;
   }
-  .paging-item--disabled {
+  .paging-item-disabled {
     cursor: not-allowed;
     opacity: 0.75;
   }
-  .paging-item--more,
-  .paging-item--current {
+  .paging-item-more,
+  .paging-item-current {
     cursor: default;
   }
   /* 选中 */
-  .paging-item--current {
+  .paging-item-current {
     background-color: #f2f2f2;
     position: relative;
     z-index: 1;
@@ -243,21 +242,21 @@ export default {
     background-color: #333;
     color: #fff;
   }
-  .paging-item--disabled,
-  .paging-item--more {
+  .paging-item-disabled,
+  .paging-item-more {
     background-color: #fff;
     color: #505050;
   }
-  .paging-item--disabled {
+  .paging-item-disabled {
     cursor: not-allowed;
     opacity: 0.75;
   }
-  .paging-item--more,
-  .paging-item--current {
+  .paging-item-more,
+  .paging-item-current {
     cursor: default;
   }
   /* 选中 */
-  .paging-item--current {
+  .paging-item-current {
     background-color: #333;
     color: #fff;
     position: relative;

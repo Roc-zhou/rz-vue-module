@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 const NODE_ENV = process.env.NODE_ENV
+const PORT = process.env.PORT && Number(process.env.PORT)
 
 module.exports = {
   mode: NODE_ENV,  // production Or development 环境
@@ -11,7 +12,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"), // 必须是绝对路径
     filename: "rz-vue-module.js", // 「入口分块(entry chunk)」的文件名模板（出口分块？）rz-vue-page.js
-    library: 'rz-vue',
+    library: 'rz-vue-module',
     libraryTarget: "umd",
     umdNamedDefine: true
   },

@@ -1,0 +1,31 @@
+{
+  "name": "rz-vue-module",
+  "version": "1.0.0",
+  "description": "基于vue分页组件",
+  "main": "./dist/rz-vue-module.js",
+  "repository": "https://github.com/Roc-zhou/rz-vue-module.git",
+  "author": "Roc-zhou 13031902163@163.com",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --info=true --color"
+  },
+  "dependencies": {
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "cross-env": "^5.2.1",
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.0.0",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-dev-server": "^3.8.0"
+  }
+}

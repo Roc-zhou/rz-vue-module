@@ -1,4 +1,4 @@
-import Page from './templete/Page/index'
+import Page from './components/Page/index'
 
 const RZ = {
   Page,

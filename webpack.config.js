@@ -24,12 +24,12 @@ module.exports = {
     open: false, //自定打开默认浏览器
   },
   plugins: [ // 插件
-    /* new HtmlWebpackPlugin({
+    new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './index.html',
       minify: true, //压缩
       hash: false, //添加hash清除缓存
-    }), */
+    }),
     new VueLoaderPlugin(),
     new webpack.SourceMapDevToolPlugin()
   ],

@@ -13,7 +13,9 @@ export default {
     // Page
   },
   methods: {
-    changeone() {}
+    changeone(index) {
+      alert(`当前页码是：${index}`)
+    }
   }
 };
 </script>

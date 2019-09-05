@@ -6,16 +6,11 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const NODE_ENV = process.env.NODE_ENV
 const PORT = process.env.PORT && Number(process.env.PORT)
 
+const demoPage = false
+
 module.exports = {
-  mode: NODE_ENV,  // production Or development 环境
+  mode: NODE_ENV === 'production' ? 'production' : 'development',  // production Or development 环境
   entry: NODE_ENV === 'production' ? "./src/index.js" : "./src/main.js", // 入口文件
-  output: {
-    path: path.resolve(__dirname, "dist"), // 必须是绝对路径
-    filename: "rz-vue-module.js", // 「入口分块(entry chunk)」的文件名模板（出口分块？）rz-vue-page.js
-    library: 'rz-vue-module',
-    libraryTarget: "umd",
-    umdNamedDefine: true
-  },
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     compress: true, // 压缩
@@ -23,13 +18,11 @@ module.exports = {
     hot: true, // 热加载
     open: false, //自定打开默认浏览器
   },
+  output: {
+    path: path.resolve(__dirname, "docs"), // 必须是绝对路径
+    filename: "js/[name].[hash].js" // 「入口分块(entry chunk)」的文件名模板（出口分块？）rz-vue-page.js
+  },
   plugins: [ // 插件
-    new HtmlWebpackPlugin({
-      filename: 'index.html',
-      template: './index.html',
-      minify: true, //压缩
-      hash: false, //添加hash清除缓存
-    }),
     new VueLoaderPlugin()
   ],
   module: {
@@ -64,4 +57,23 @@ module.exports = {
   performance: {
     hints: false
   }
+}
+
+if (NODE_ENV === 'production') { // 打包上传包
+  module.exports.output = {
+    path: path.resolve(__dirname, "dist"), // 必须是绝对路径
+    filename: "rz-vue-module.js", // 「入口分块(entry chunk)」的文件名模板（出口分块？）rz-vue-page.js
+    library: 'rz-vue-module',
+    libraryTarget: "umd",
+    umdNamedDefine: true
+  }
+}
+
+if (NODE_ENV !== 'production') {
+  module.exports.plugins.push(new HtmlWebpackPlugin({
+    filename: 'index.html',
+    template: './index.html',
+    minify: true, //压缩
+    hash: false, //添加hash清除缓存
+  }))
 }

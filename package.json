@@ -9,6 +9,7 @@
   "private": false,
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
+    "build_dev": "cross-env NODE_ENV=production_dev webpack",
     "dev": "cross-env NODE_ENV=development webpack-dev-server --info=true --color"
   },
   "dependencies": {

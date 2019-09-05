@@ -1,4 +1,6 @@
 # 基于 vue 的一个分页组件插件
+> [demo](https://roc-zhou.github.io/rz-vue-module/)
+
 先上图
 
 ![image.png](https://i.loli.net/2019/09/02/A7vo2caqxsLUZ58.png)

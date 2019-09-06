@@ -14,8 +14,8 @@ yarn add rz-vue-module
 ### 使用 main.js
 ```
 全局注册
-import Page from 'rz-vue-module'
-Vue.use(Page)
+import RZ from 'rz-vue-module'
+Vue.use(RZ)
 ```
 ### app.vue
 ```

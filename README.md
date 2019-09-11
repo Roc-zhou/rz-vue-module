@@ -1,7 +1,7 @@
 # 基于 vue 的一个分页组件插件
 > [demo](https://roc-zhou.github.io/rz-vue-module/)
 
-[toc]
+[TOC]
 
 ## 安装
 ```sh

@@ -10,9 +10,9 @@
     <div class="justify-start">
       <Timer class="app-timer" @start="getCode" v-model="active"></Timer>
     </div>
-    <h1>3、CountUp</h1>
+    <h1>3、CountUp 数字动画</h1>
     <div class="justify-start">
-      <CountUp :endVal="2000" class="CountUp"></CountUp>
+      <CountUp :endVal="num" class="CountUp"></CountUp>
     </div>
   </div>
 </template>
@@ -23,8 +23,14 @@ export default {
   components: {},
   data() {
     return {
-      active: false
+      active: false,
+      num:0
     };
+  },
+  mounted() {
+    setTimeout(() => {
+      this.num = 20000
+    }, 2000);
   },
   methods: {
     changeone(index) {

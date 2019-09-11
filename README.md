@@ -1,25 +1,25 @@
-[TOC]
 # 基于 vue 的一个分页组件插件
 > [demo](https://roc-zhou.github.io/rz-vue-module/)
 
-先上图
+[TOC]
 
-![image.png](https://i.loli.net/2019/09/02/A7vo2caqxsLUZ58.png)
-
-### 安装
+## 安装
 ```sh
 npm install --save rz-vue-module or cnpm install --save rz-vue-module
 yarn add rz-vue-module
 ```
 
-### 使用 main.js
+## 使用 main.js
 ```
 全局注册
 import RZ from 'rz-vue-module'
 Vue.use(RZ)
 ```
 
-## Page 分页组件
+### Page 分页组件
+先上图
+
+![image.png](https://i.loli.net/2019/09/02/A7vo2caqxsLUZ58.png)
 ```
 直接使用
 <Page :page-index="2" :total="20" :page-size="8" @change="changeone"></Page>
@@ -37,7 +37,7 @@ Vue.use(RZ)
 | :----: | :------: | :------: |
 | change | 切换页码 | 当前页码 |
 
-## Timer 倒计时组件
+### Timer 倒计时组件
 
 #### 使用
 ```

@@ -10,6 +10,10 @@
     <div class="justify-start">
       <Timer class="app-timer" @start="getCode" v-model="active"></Timer>
     </div>
+    <h1>3、CountUp</h1>
+    <div class="justify-start">
+      <CountUp :endVal="2000" class="CountUp"></CountUp>
+    </div>
   </div>
 </template>
 
@@ -27,9 +31,9 @@ export default {
       alert(`当前页码是：${index}`);
     },
     getCode(e) {
-      this.active = true
+      this.active = true;
       setTimeout(() => {
-        this.active = false
+        this.active = false;
       }, 5000);
     }
   }
@@ -46,5 +50,9 @@ export default {
   background-color: #000;
   color: #fff;
   font-size: 14px;
+}
+.CountUp {
+  color: red;
+  font-size: 30px;
 }
 </style>

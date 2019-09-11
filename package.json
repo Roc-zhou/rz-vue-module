@@ -13,6 +13,7 @@
     "dev": "cross-env NODE_ENV=development webpack-dev-server --info=true --color"
   },
   "dependencies": {
+    "countup.js": "^2.0.4",
     "rz-ui": "^1.0.3",
     "vue": "^2.6.10"
   },

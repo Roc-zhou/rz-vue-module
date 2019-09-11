@@ -36,4 +36,26 @@ Vue.use(RZ)
 | :----: | :------: | :------: |
 | change | 切换页码 | 当前页码 |
 
-### Timer 倒计时组件
+## Timer 倒计时组件
+
+#### 使用
+```
+使用
+<Timer class="app-timer" @start="getCode" v-model="active"></Timer>
+```
+
+#### props
+|   属性   |       说明       |  类型   |   默认值   |
+| :------: | :--------------: | :-----: | :--------: |
+|  focus   |  默认展示的文案  | String  | 获取验证码 |
+|   time   |       时间       | Number  |     60     |
+| template |  动态变化的文案  | String  | {{time}} S |
+|   blur   | 倒计时完毕后文案 | String  |  再次发送  |
+|  value   |     是否激活     | Boolean |   false    |
+
+#### events
+
+| 事件名 |   说明   |    返回值     |
+| :----: | :------: | :-----------: |
+| start  | 点击开始 | fasle or true |
+

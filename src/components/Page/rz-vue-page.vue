@@ -1,5 +1,5 @@
 <template>
-  <div class="paging">
+  <div class="paging justify-center">
     <ul class="mo-paging">
       <li
         :class="['paging-item', 'paging-item--prev', 'items-center', {'paging-item-disabled' : index === 1},'one']"

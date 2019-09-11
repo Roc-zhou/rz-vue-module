@@ -1,7 +1,10 @@
+import 'rz-ui'
 import Page from './components/Page/index'
+import Timer from './components/Timer/index'
 
 const RZ = {
   Page,
+  Timer
 },
   install = Vue => {
     for (let [key, value] of Object.entries(RZ)) Vue.component(key, value) 

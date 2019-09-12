@@ -1,6 +1,6 @@
 {
   "name": "rz-vue-module",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "基于vue分页组件",
   "main": "./dist/rz-vue-module.js",
   "repository": "https://github.com/Roc-zhou/rz-vue-module.git",

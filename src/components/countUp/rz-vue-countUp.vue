@@ -19,7 +19,7 @@ export default {
       type: Number,
       default: 0
     },
-    // 持续几秒？默认 2S
+    // 持续几秒
     duration: {
       type: Number,
       default: 2
@@ -44,10 +44,12 @@ export default {
       type: String,
       default: "."
     },
+    // 前缀
     prefix: {
       type: String,
       default: ""
     },
+    // 后缀
     suffix: {
       type: String,
       default: ""
@@ -66,7 +68,6 @@ export default {
   data() {
     return {
       counter: null,
-      unitText: "",
       options: {
         startVal: this.startVal,
         decimalPlaces: this.decimalPlaces,

@@ -16,5 +16,7 @@ const RZ = {
 
 export default {
   Page,
+  Timer,
+  CountUp,
   install
 }

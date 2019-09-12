@@ -41,7 +41,6 @@ Vue.use(RZ)
 
 #### 使用
 ```
-使用
 <Timer class="app-timer" @start="getCode" v-model="active"></Timer>
 ```
 
@@ -55,8 +54,30 @@ Vue.use(RZ)
 |  value   |     是否激活     | Boolean |   false    |
 
 #### events
-
 | 事件名 |   说明   |    返回值     |
 | :----: | :------: | :-----------: |
 | start  | 点击开始 | fasle or true |
 
+### CountUp 数字动画组件
+
+#### 使用
+```
+<CountUp :endVal="num" class="CountUp"></CountUp> // 样式自己定义
+```
+#### props
+
+|     属性      |              说明              |  类型   | 默认值 |
+| :-----------: | :----------------------------: | :-----: | :----: |
+|   startVal    |          从 多少 开始          | Number  |   0    |
+| decimalPlaces |            小数位数            | Number  |   0    |
+|   duration    |          动画持续时间          | Number  |   2    |
+|  useGrouping  | example: 1,000 vs 1000 (true)  | Boolean |  true  |
+|   useEasing   |     ease animation (true)      | Boolean |  true  |
+|   separator   |    grouping separator (',')    | String  |   ，   |
+|    decimal    |         decimal ('.')          | String  |   .    |
+|    prefix     |              前缀              | String  |   -    |
+|    suffix     |              后缀              | String  |   -    |
+|     delay     |          延迟几秒加载          | Number  |   0    |
+|    endVal     | 结束值，即动画结束后显示的数值 | Number  | 必传！ |
+
+> 更多选项 [demo](https://inorganik.github.io/countUp.js/)

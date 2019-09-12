@@ -1,7 +1,7 @@
 import 'rz-ui'
 import Page from './components/Page/index'
 import Timer from './components/Timer/index'
-import CountUp from './components/countUp'
+import CountUp from './components/CountUp'
 
 const components = [
   Page,

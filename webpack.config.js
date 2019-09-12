@@ -2,6 +2,8 @@ const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const { CleanWebpackPlugin } = require("clean-webpack-plugin")
+const getComponentEntries = require('./build/util')
 
 const NODE_ENV = process.env.NODE_ENV
 const PORT = process.env.PORT && Number(process.env.PORT)
@@ -10,7 +12,12 @@ const demoPage = false
 
 module.exports = {
   mode: NODE_ENV === 'production' ? 'production' : 'development',  // production Or development 环境
-  entry: NODE_ENV === 'production' ? "./src/index.js" : "./src/main.js", // 入口文件
+  entry: NODE_ENV !== 'production' ? {
+    index: "./src/main.js"
+  } : {
+      ...getComponentEntries('src/components'),
+      index: "./src/index.js", // 入口文件
+    },
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     compress: true, // 压缩
@@ -23,6 +30,7 @@ module.exports = {
     filename: "js/[name].[hash].js" // 「入口分块(entry chunk)」的文件名模板（出口分块？）rz-vue-page.js
   },
   plugins: [ // 插件
+    new CleanWebpackPlugin(),
     new VueLoaderPlugin()
   ],
   module: {
@@ -53,7 +61,7 @@ module.exports = {
       }
     ]
   },
-  devtool: NODE_ENV === 'production' ? '#source-map' : '#eval-source-map',
+  devtool: '', //NODE_ENV === 'production' ? '#source-map' : '#eval-source-map'
   performance: {
     hints: false
   }
@@ -61,8 +69,8 @@ module.exports = {
 
 if (NODE_ENV === 'production') { // 打包上传包
   module.exports.output = {
-    path: path.resolve(__dirname, "dist"), // 必须是绝对路径
-    filename: "rz-vue-module.js", // 「入口分块(entry chunk)」的文件名模板（出口分块？）rz-vue-page.js
+    path: path.resolve(__dirname, "lib"), // 必须是绝对路径
+    filename: "[name].js", // 「入口分块(entry chunk)」的文件名模板（出口分块？）rz-vue-page.js
     library: 'rz-vue-module',
     libraryTarget: "umd",
     umdNamedDefine: true

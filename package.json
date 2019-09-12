@@ -1,8 +1,8 @@
 {
   "name": "rz-vue-module",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "基于vue分页组件",
-  "main": "./dist/rz-vue-module.js",
+  "main": "src/index.js",
   "repository": "https://github.com/Roc-zhou/rz-vue-module.git",
   "author": "Roc-zhou 13031902163@163.com",
   "license": "MIT",

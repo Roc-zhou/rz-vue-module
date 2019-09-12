@@ -26,11 +26,20 @@ npm install --save rz-vue-module or cnpm install --save rz-vue-module
 yarn add rz-vue-module
 ```
 
-## 使用 main.js
+## 使用 main.js (全局注册)
 ```js
 // 全局注册
 import RZ from 'rz-vue-module'
 Vue.use(RZ)
+```
+## 按需引入
+```js
+// HelloWorld.vue
+import Page from 'rz-vue-module/lib/Page'
+
+components: {
+  Page
+}
 ```
 
 ### Page 分页组件

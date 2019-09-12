@@ -77,6 +77,8 @@ Vue.use(RZ)
 
 ### CountUp 数字动画组件
 
+![GIF.gif](https://i.loli.net/2019/09/12/n8Fga9L4AkVS73Q.gif)
+
 #### 使用
 ```js
 <CountUp :endVal="num" class="CountUp"></CountUp> // 样式自己定义

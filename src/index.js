@@ -15,8 +15,6 @@ const RZ = {
 !!window && window.Vue && install(window.Vue) // auto install
 
 export default {
-  Page,
-  Timer,
-  CountUp,
+  ...RZ,
   install
 }

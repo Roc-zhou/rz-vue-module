@@ -5,6 +5,21 @@
 
 [TOC]
 
+## test
+```sh
+git clone https://github.com/Roc-zhou/rz-vue-module.git
+
+cd rz-vue-module
+
+npm or yarn install
+
+npm run dev
+
+http://localhost:8080/
+```
+
+
+
 ## 安装
 ```sh
 npm install --save rz-vue-module or cnpm install --save rz-vue-module

@@ -12,7 +12,7 @@ export default {
   beforeRouteEnter(to, from, next) {
     return next(vm => {});
   },
-  name: "timer",
+  name: "Timer",
   props: {
     /**
      * 默认展示的文案

@@ -3,18 +3,20 @@ import Page from './components/Page/index'
 import Timer from './components/Timer/index'
 import CountUp from './components/countUp'
 
-const RZ = {
+const components = [
   Page,
   Timer,
   CountUp
-},
+],
   install = Vue => {
-    for (let [key, value] of Object.entries(RZ)) Vue.component(key, value) 
+    components.forEach(component => {
+      Vue.component(component.name, component);
+    });
   }
 
 !!window && window.Vue && install(window.Vue) // auto install
 
 export default {
-  ...RZ,
+  ...components,
   install
 }

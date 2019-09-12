@@ -30,7 +30,7 @@
 
 <script>
 export default {
-  name: "rz-vue-page",
+  name: "Page",
   props: {
     //页面中的可见页码，其他的以...替代, 必须是奇数
     perPages: {

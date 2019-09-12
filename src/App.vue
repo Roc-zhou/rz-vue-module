@@ -12,7 +12,7 @@
     </div>
     <h1>3、CountUp 数字动画</h1>
     <div class="justify-start">
-      <CountUp :endVal="num" class="CountUp"></CountUp>
+      <CountUp :endVal="num" class="CountUp" :duration="5"></CountUp>
     </div>
   </div>
 </template>
@@ -24,12 +24,12 @@ export default {
   data() {
     return {
       active: false,
-      num:0
+      num: 0
     };
   },
   mounted() {
     setTimeout(() => {
-      this.num = 20000
+      this.num = 200000;
     }, 2000);
   },
   methods: {

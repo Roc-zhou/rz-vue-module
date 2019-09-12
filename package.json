@@ -1,12 +1,15 @@
 {
   "name": "rz-vue-module",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "基于vue分页组件",
   "main": "./dist/rz-vue-module.js",
   "repository": "https://github.com/Roc-zhou/rz-vue-module.git",
   "author": "Roc-zhou 13031902163@163.com",
   "license": "MIT",
   "private": false,
+  "keywords": [
+    "component", "vue", "vue-component", "components"
+  ],
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack",
     "build_dev": "cross-env NODE_ENV=production_dev webpack",

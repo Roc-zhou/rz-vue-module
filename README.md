@@ -1,6 +1,8 @@
 # 基于 vue 的一个分页组件插件
 > [demo](https://roc-zhou.github.io/rz-vue-module/)
 
+> 适用于个人项目 或 需求不是特别复杂项目。
+
 [TOC]
 
 ## 安装
@@ -10,8 +12,8 @@ yarn add rz-vue-module
 ```
 
 ## 使用 main.js
-```
-全局注册
+```js
+// 全局注册
 import RZ from 'rz-vue-module'
 Vue.use(RZ)
 ```
@@ -20,8 +22,8 @@ Vue.use(RZ)
 先上图
 
 ![image.png](https://i.loli.net/2019/09/02/A7vo2caqxsLUZ58.png)
-```
-直接使用
+```js
+// 直接使用
 <Page :page-index="2" :total="20" :page-size="8" @change="changeone"></Page>
 ```
 #### props
@@ -40,7 +42,7 @@ Vue.use(RZ)
 ### Timer 倒计时组件
 
 #### 使用
-```
+```js
 <Timer class="app-timer" @start="getCode" v-model="active"></Timer>
 ```
 
@@ -61,7 +63,7 @@ Vue.use(RZ)
 ### CountUp 数字动画组件
 
 #### 使用
-```
+```js
 <CountUp :endVal="num" class="CountUp"></CountUp> // 样式自己定义
 ```
 #### props

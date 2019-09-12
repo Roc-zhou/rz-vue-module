@@ -11,8 +11,10 @@
       <Timer class="app-timer" @start="getCode" v-model="active"></Timer>
     </div>
     <h1>3、CountUp 数字动画</h1>
-    <div class="justify-start">
-      <CountUp :endVal="num" class="CountUp" :duration="5"></CountUp>
+    <div class="justify-start items-center">
+      <CountUp :endVal="40000" class="CountUp" :duration="5" style="margin-right:20px;"></CountUp>
+      <CountUp :endVal="2000" class="CountUp" :duration="5" :prefix="'￥'" style="margin-right:20px;"></CountUp>
+      <CountUp :endVal="1000000" class="CountUp" :duration="5" :suffix="'元'"></CountUp>
     </div>
   </div>
 </template>

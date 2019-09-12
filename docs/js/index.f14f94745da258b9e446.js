@@ -114,6 +114,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "App",
   components: {},
@@ -1610,11 +1612,23 @@ var render = function() {
     _vm._v(" "),
     _c(
       "div",
-      { staticClass: "justify-start" },
+      { staticClass: "justify-start items-center" },
       [
         _c("CountUp", {
           staticClass: "CountUp",
-          attrs: { endVal: _vm.num, duration: 5 }
+          staticStyle: { "margin-right": "20px" },
+          attrs: { endVal: 40000, duration: 5 }
+        }),
+        _vm._v(" "),
+        _c("CountUp", {
+          staticClass: "CountUp",
+          staticStyle: { "margin-right": "20px" },
+          attrs: { endVal: 2000, duration: 5, prefix: "￥" }
+        }),
+        _vm._v(" "),
+        _c("CountUp", {
+          staticClass: "CountUp",
+          attrs: { endVal: 1000000, duration: 5, suffix: "元" }
         })
       ],
       1

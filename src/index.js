@@ -2,11 +2,13 @@ import 'rz-ui'
 import Page from './components/Page/index'
 import Timer from './components/Timer/index'
 import CountUp from './components/CountUp'
+import QrCode from './components/VueQr'
 
 const components = [
   Page,
   Timer,
-  CountUp
+  CountUp,
+  QrCode
 ],
   install = Vue => {
     components.forEach(component => {

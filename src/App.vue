@@ -13,8 +13,18 @@
     <h1>3、CountUp 数字动画</h1>
     <div class="justify-start items-center">
       <CountUp :endVal="40000" class="CountUp" :duration="5" style="margin-right:20px;"></CountUp>
-      <CountUp :endVal="2000" class="CountUp" :duration="5" :prefix="'￥'" style="margin-right:20px;"></CountUp>
+      <CountUp
+        :endVal="2000"
+        class="CountUp"
+        :duration="5"
+        :prefix="'￥'"
+        style="margin-right:20px;"
+      ></CountUp>
       <CountUp :endVal="1000000" class="CountUp" :duration="5" :suffix="'元'"></CountUp>
+    </div>
+    <h1>4、QrCode 二维码</h1>
+    <div class="justify-start items-center">
+      <qr-code :text="'https://roc-zhou.github.io/rz-vue-module/'"></qr-code>
     </div>
   </div>
 </template>

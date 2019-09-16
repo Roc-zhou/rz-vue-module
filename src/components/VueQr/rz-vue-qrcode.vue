@@ -28,6 +28,7 @@ export default {
     // 欲编码的内容
     text: {
       type: String,
+      required: true,
       default: ""
     },
     //容错级别 0-3

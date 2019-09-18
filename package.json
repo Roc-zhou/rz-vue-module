@@ -1,7 +1,7 @@
 {
   "name": "rz-vue-module",
-  "version": "1.2.4",
-  "description": "基于vue分页组件",
+  "version": "1.2.5",
+  "description": "基于vue开发的常用组件库",
   "main": "lib/index.js",
   "repository": "https://github.com/Roc-zhou/rz-vue-module.git",
   "author": "Roc-zhou 13031902163@163.com",

@@ -1,4 +1,4 @@
-# 基于 vue 的一个分页组件插件
+# 基于 vue 开发的常用组件库
 > [demo](https://roc-zhou.github.io/rz-vue-module/)
 
 > 适用于个人项目 或 需求不是特别复杂项目。

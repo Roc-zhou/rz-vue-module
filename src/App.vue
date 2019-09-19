@@ -24,7 +24,7 @@
     </div>
     <h1>4、QrCode 二维码</h1>
     <div class="justify-start items-center">
-      <qr-code :text="'https://roc-zhou.github.io/rz-vue-module/'"></qr-code>
+      <RzCode :text="'QrCode rz-vue-module'"></RzCode>
     </div>
   </div>
 </template>

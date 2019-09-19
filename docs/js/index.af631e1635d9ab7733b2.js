@@ -452,6 +452,133 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/components/RzCode/rz-vue-qrcode.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--2!./node_modules/vue-loader/lib??vue-loader-options!./src/components/RzCode/rz-vue-qrcode.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vue_qr__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-qr */ "./node_modules/vue-qr/dist/vue-qr.js");
+/* harmony import */ var vue_qr__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_qr__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var os__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! os */ "./node_modules/os-browserify/browser.js");
+/* harmony import */ var os__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(os__WEBPACK_IMPORTED_MODULE_1__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  name: "RzCode",
+  props: {
+    // 欲编码的内容
+    text: {
+      type: String,
+      required: true,
+      "default": ""
+    },
+    //容错级别 0-3
+    correctLevel: {
+      type: Number,
+      "default": 0
+    },
+    //尺寸, 长宽一致, 包含外边距 默认200
+    size: {
+      type: Number,
+      "default": 200
+    },
+    //二维码图像的外边距, 默认 20px
+    margin: {
+      type: Number,
+      "default": 20
+    },
+    //  欲嵌入的背景图地址
+    bgSrc: {
+      type: String,
+      "default": ""
+    },
+    //  欲嵌入的背景图 gif 地址,设置后普通的背景图将失效。设置此选项会影响性能
+    gifBgSrc: {
+      type: String,
+      "default": ""
+    },
+    // 背景色
+    backgroundColor: {
+      type: String,
+      "default": "#FFF"
+    },
+    // 嵌入至二维码中心的 LOGO 地址
+    logoSrc: {
+      type: String,
+      "default": ""
+    },
+    // 用于计算 LOGO 大小的值, 过大将导致解码失败, LOGO 尺寸计算公式 logoScale*(size-2*margin), 默认 0.2
+    logoScale: {
+      type: Number,
+      "default": 0.2
+    },
+    //  LOGO 标识周围的空白边框, 默认为0
+    logoMargin: {
+      type: Number,
+      "default": 0
+    },
+    //Logo 背景色,需要设置 logo margin
+    logoBackgroundColor: {
+      type: String,
+      "default": ""
+    },
+    //LOGO 标识及其边框的圆角半径, 默认为0
+    logoCornerRadius: {
+      type: Number,
+      "default": 0
+    },
+    //若设为 true, 背景图外将绘制白色边框
+    whiteMargin: {
+      type: Boolean,
+      "default": true
+    },
+    // 数据区域点缩小比例,默认为0.35  (0 < scale < 1.0)
+    dotScale: {
+      type: Number,
+      "default": 1
+    }
+  },
+  components: {
+    VueQr: vue_qr__WEBPACK_IMPORTED_MODULE_0___default.a
+  },
+  data: function data() {
+    return {};
+  },
+  methods: {
+    test: function test(dataUrl, id) {
+      this.$emit("change", dataUrl);
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/components/Timer/rz-vue-timer.vue?vue&type=script&lang=js&":
 /*!******************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--2!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Timer/rz-vue-timer.vue?vue&type=script&lang=js& ***!
@@ -564,126 +691,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/components/VueQr/rz-vue-qrcode.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--2!./node_modules/vue-loader/lib??vue-loader-options!./src/components/VueQr/rz-vue-qrcode.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue_qr__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-qr */ "./node_modules/vue-qr/dist/vue-qr.js");
-/* harmony import */ var vue_qr__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue_qr__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var os__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! os */ "./node_modules/os-browserify/browser.js");
-/* harmony import */ var os__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(os__WEBPACK_IMPORTED_MODULE_1__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  name: "QrCode",
-  props: {
-    // 欲编码的内容
-    text: {
-      type: String,
-      "default": ""
-    },
-    //容错级别 0-3
-    correctLevel: {
-      type: Number,
-      "default": 0
-    },
-    //尺寸, 长宽一致, 包含外边距 默认200
-    size: {
-      type: Number,
-      "default": 200
-    },
-    //二维码图像的外边距, 默认 20px
-    margin: {
-      type: Number,
-      "default": 20
-    },
-    //  欲嵌入的背景图地址
-    bgSrc: {
-      type: String,
-      "default": ""
-    },
-    //  欲嵌入的背景图 gif 地址,设置后普通的背景图将失效。设置此选项会影响性能
-    gifBgSrc: {
-      type: String,
-      "default": ""
-    },
-    // 背景色
-    backgroundColor: {
-      type: String,
-      "default": "#FFF"
-    },
-    // 嵌入至二维码中心的 LOGO 地址
-    logoSrc: {
-      type: String,
-      "default": ""
-    },
-    // 用于计算 LOGO 大小的值, 过大将导致解码失败, LOGO 尺寸计算公式 logoScale*(size-2*margin), 默认 0.2
-    logoScale: {
-      type: Number,
-      "default": 0.2
-    },
-    //  LOGO 标识周围的空白边框, 默认为0
-    logoMargin: {
-      type: Number,
-      "default": 0
-    },
-    //Logo 背景色,需要设置 logo margin
-    logoBackgroundColor: {
-      type: String,
-      "default": ""
-    },
-    //LOGO 标识及其边框的圆角半径, 默认为0
-    logoCornerRadius: {
-      type: Number,
-      "default": 0
-    },
-    //若设为 true, 背景图外将绘制白色边框
-    whiteMargin: {
-      type: Boolean,
-      "default": true
-    }
-  },
-  components: {
-    VueQr: vue_qr__WEBPACK_IMPORTED_MODULE_0___default.a
-  },
-  data: function data() {
-    return {};
-  },
-  methods: {
-    test: function test(dataUrl, id) {
-      this.$emit("change", dataUrl);
-    }
-  }
-});
-
-/***/ }),
-
 /***/ "./node_modules/countup.js/dist/countUp.min.js":
 /*!*****************************************************!*\
   !*** ./node_modules/countup.js/dist/countUp.min.js ***!
@@ -721,7 +728,7 @@ exports.push([module.i, "/*\r\n * @Author: roc_zhou\r\n * 2019 1137938565@qq.com
 
 exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n#app {\n  padding: 0 50px;\n}\n.app-timer {\n  width: 100px;\n  height: 40px;\n  background-color: #000;\n  color: #fff;\n  font-size: 14px;\n}\n.CountUp {\n  color: red;\n  font-size: 30px;\n}\n", ""]);
+exports.push([module.i, "\n#app {\r\n  padding: 0 50px;\n}\n.app-timer {\r\n  width: 100px;\r\n  height: 40px;\r\n  background-color: #000;\r\n  color: #fff;\r\n  font-size: 14px;\n}\n.CountUp {\r\n  color: red;\r\n  font-size: 30px;\n}\r\n", ""]);
 
 
 /***/ }),
@@ -735,7 +742,7 @@ exports.push([module.i, "\n#app {\n  padding: 0 50px;\n}\n.app-timer {\n  width:
 
 exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, "\n.items-center[data-v-4ba3478b] {\n  display: flex;\n  display: -webkit-flex;\n  -webkit-align-items: center;\n  align-items: center;\n}\n@media screen and (max-width: 755px) {\n.mo-paging[data-v-4ba3478b] {\n    display: inline-block;\n    padding: 0;\n    /* margin: 2em 0; */\n    font-size: 0;\n    list-style: none;\n    user-select: none;\n}\n.paging-item[data-v-4ba3478b] {\n    display: inline;\n    font-size: 0.390625rem /* 25/64 */;\n    position: relative;\n    padding: 0.15625rem /* 10/64 */ 0.234375rem /* 15/64 */;\n    text-decoration: none;\n    border: 1px solid #ccc;\n    background-color: #fff;\n    margin-left: -1px;\n    cursor: pointer;\n}\n.paging-item[data-v-4ba3478b]:first-child {\n    margin-left: 0;\n}\n.paging-item-disabled[data-v-4ba3478b],\n  .paging-item-more[data-v-4ba3478b] {\n    background-color: #fff;\n    color: #505050;\n}\n.paging-item-disabled[data-v-4ba3478b] {\n    cursor: not-allowed;\n    opacity: 0.75;\n}\n.paging-item-more[data-v-4ba3478b],\n  .paging-item-current[data-v-4ba3478b] {\n    cursor: default;\n}\n  /* 选中 */\n.paging-item-current[data-v-4ba3478b] {\n    background-color: #f2f2f2;\n    position: relative;\n    z-index: 1;\n    border-color: #ccc;\n}\n}\n@media screen and (min-width: 755px) {\n.mo-paging[data-v-4ba3478b] {\n    display: inline-block;\n    padding: 0;\n    font-size: 0;\n    list-style: none;\n    user-select: none;\n}\n.paging-item[data-v-4ba3478b] {\n    display: inline-block;\n    position: relative;\n    width: 32px;\n    height: 32px;\n    text-decoration: none;\n    border: 1px solid #e4e4e4;\n    background-color: #fff;\n    border-radius: 4px;\n    margin-left: -1px;\n    cursor: pointer;\n    font-size: 14px;\n    color: #333333;\n    text-align: center;\n    line-height: 32px;\n    margin: 0 5px;\n}\n.paging-item[data-v-4ba3478b]:first-child {\n    margin-left: 0;\n}\n.paging-item[data-v-4ba3478b]:hover {\n    background-color: #333;\n    color: #fff;\n}\n.paging-item-disabled[data-v-4ba3478b],\n  .paging-item-more[data-v-4ba3478b] {\n    background-color: #fff;\n    color: #505050;\n}\n.paging-item-disabled[data-v-4ba3478b] {\n    cursor: not-allowed;\n    opacity: 0.75;\n}\n.paging-item-more[data-v-4ba3478b],\n  .paging-item-current[data-v-4ba3478b] {\n    cursor: default;\n}\n  /* 选中 */\n.paging-item-current[data-v-4ba3478b] {\n    background-color: #333;\n    color: #fff;\n    position: relative;\n}\n.one[data-v-4ba3478b] {\n    width: 75px;\n}\n.two[data-v-4ba3478b] {\n    width: 60px;\n}\n}\n", ""]);
+exports.push([module.i, "\n.items-center[data-v-4ba3478b] {\r\n  display: flex;\r\n  display: -webkit-flex;\r\n  -webkit-align-items: center;\r\n  align-items: center;\n}\n@media screen and (max-width: 755px) {\n.mo-paging[data-v-4ba3478b] {\r\n    display: inline-block;\r\n    padding: 0;\r\n    /* margin: 2em 0; */\r\n    font-size: 0;\r\n    list-style: none;\r\n    user-select: none;\n}\n.paging-item[data-v-4ba3478b] {\r\n    display: inline;\r\n    font-size: 0.390625rem /* 25/64 */;\r\n    position: relative;\r\n    padding: 0.15625rem /* 10/64 */ 0.234375rem /* 15/64 */;\r\n    text-decoration: none;\r\n    border: 1px solid #ccc;\r\n    background-color: #fff;\r\n    margin-left: -1px;\r\n    cursor: pointer;\n}\n.paging-item[data-v-4ba3478b]:first-child {\r\n    margin-left: 0;\n}\n.paging-item-disabled[data-v-4ba3478b],\r\n  .paging-item-more[data-v-4ba3478b] {\r\n    background-color: #fff;\r\n    color: #505050;\n}\n.paging-item-disabled[data-v-4ba3478b] {\r\n    cursor: not-allowed;\r\n    opacity: 0.75;\n}\n.paging-item-more[data-v-4ba3478b],\r\n  .paging-item-current[data-v-4ba3478b] {\r\n    cursor: default;\n}\r\n  /* 选中 */\n.paging-item-current[data-v-4ba3478b] {\r\n    background-color: #f2f2f2;\r\n    position: relative;\r\n    z-index: 1;\r\n    border-color: #ccc;\n}\n}\n@media screen and (min-width: 755px) {\n.mo-paging[data-v-4ba3478b] {\r\n    display: inline-block;\r\n    padding: 0;\r\n    font-size: 0;\r\n    list-style: none;\r\n    user-select: none;\n}\n.paging-item[data-v-4ba3478b] {\r\n    display: inline-block;\r\n    position: relative;\r\n    width: 32px;\r\n    height: 32px;\r\n    text-decoration: none;\r\n    border: 1px solid #e4e4e4;\r\n    background-color: #fff;\r\n    border-radius: 4px;\r\n    margin-left: -1px;\r\n    cursor: pointer;\r\n    font-size: 14px;\r\n    color: #333333;\r\n    text-align: center;\r\n    line-height: 32px;\r\n    margin: 0 5px;\n}\n.paging-item[data-v-4ba3478b]:first-child {\r\n    margin-left: 0;\n}\n.paging-item[data-v-4ba3478b]:hover {\r\n    background-color: #333;\r\n    color: #fff;\n}\n.paging-item-disabled[data-v-4ba3478b],\r\n  .paging-item-more[data-v-4ba3478b] {\r\n    background-color: #fff;\r\n    color: #505050;\n}\n.paging-item-disabled[data-v-4ba3478b] {\r\n    cursor: not-allowed;\r\n    opacity: 0.75;\n}\n.paging-item-more[data-v-4ba3478b],\r\n  .paging-item-current[data-v-4ba3478b] {\r\n    cursor: default;\n}\r\n  /* 选中 */\n.paging-item-current[data-v-4ba3478b] {\r\n    background-color: #333;\r\n    color: #fff;\r\n    position: relative;\n}\n.one[data-v-4ba3478b] {\r\n    width: 75px;\n}\n.two[data-v-4ba3478b] {\r\n    width: 60px;\n}\n}\r\n", ""]);
 
 
 /***/ }),
@@ -1829,11 +1836,7 @@ var render = function() {
     _c(
       "div",
       { staticClass: "justify-start items-center" },
-      [
-        _c("qr-code", {
-          attrs: { text: "https://roc-zhou.github.io/rz-vue-module/" }
-        })
-      ],
+      [_c("RzCode", { attrs: { text: "QrCode rz-vue-module" } })],
       1
     )
   ])
@@ -2018,6 +2021,55 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/RzCode/rz-vue-qrcode.vue?vue&type=template&id=25ed3360&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/RzCode/rz-vue-qrcode.vue?vue&type=template&id=25ed3360& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "RzCode justify-center" },
+    [
+      _c("vue-qr", {
+        attrs: {
+          text: _vm.text,
+          correctLevel: _vm.correctLevel,
+          size: _vm.size,
+          margin: _vm.margin,
+          bgSrc: _vm.bgSrc,
+          gifBgSrc: _vm.gifBgSrc,
+          backgroundColor: _vm.backgroundColor,
+          logoSrc: _vm.logoSrc,
+          logoScale: _vm.logoScale,
+          logoMargin: _vm.logoMargin,
+          logoBackgroundColor: _vm.logoBackgroundColor,
+          logoCornerRadius: _vm.logoCornerRadius,
+          whiteMargin: _vm.whiteMargin,
+          callback: _vm.test,
+          dotScale: _vm.dotScale
+        }
+      })
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/Timer/rz-vue-timer.vue?vue&type=template&id=b30b6b9a&scoped=true&":
 /*!************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/Timer/rz-vue-timer.vue?vue&type=template&id=b30b6b9a&scoped=true& ***!
@@ -2044,54 +2096,6 @@ var render = function() {
       }
     }
   })
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/VueQr/rz-vue-qrcode.vue?vue&type=template&id=5669b4dc&":
-/*!*************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/components/VueQr/rz-vue-qrcode.vue?vue&type=template&id=5669b4dc& ***!
-  \*************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "Qrcode justify-center" },
-    [
-      _c("vue-qr", {
-        attrs: {
-          text: _vm.text,
-          correctLevel: _vm.correctLevel,
-          size: _vm.size,
-          margin: _vm.margin,
-          bgSrc: _vm.bgSrc,
-          gifBgSrc: _vm.gifBgSrc,
-          backgroundColor: _vm.backgroundColor,
-          logoSrc: _vm.logoSrc,
-          logoScale: _vm.logoScale,
-          logoMargin: _vm.logoMargin,
-          logoBackgroundColor: _vm.logoBackgroundColor,
-          logoCornerRadius: _vm.logoCornerRadius,
-          whiteMargin: _vm.whiteMargin,
-          ":callback": _vm.test
-        }
-      })
-    ],
-    1
-  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -10969,6 +10973,90 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./src/components/RzCode/index.js":
+/*!****************************************!*\
+  !*** ./src/components/RzCode/index.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _rz_vue_qrcode_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./rz-vue-qrcode.vue */ "./src/components/RzCode/rz-vue-qrcode.vue");
+
+/* harmony default export */ __webpack_exports__["default"] = (_rz_vue_qrcode_vue__WEBPACK_IMPORTED_MODULE_0__["default"]);
+
+/***/ }),
+
+/***/ "./src/components/RzCode/rz-vue-qrcode.vue":
+/*!*************************************************!*\
+  !*** ./src/components/RzCode/rz-vue-qrcode.vue ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _rz_vue_qrcode_vue_vue_type_template_id_25ed3360___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./rz-vue-qrcode.vue?vue&type=template&id=25ed3360& */ "./src/components/RzCode/rz-vue-qrcode.vue?vue&type=template&id=25ed3360&");
+/* harmony import */ var _rz_vue_qrcode_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./rz-vue-qrcode.vue?vue&type=script&lang=js& */ "./src/components/RzCode/rz-vue-qrcode.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _rz_vue_qrcode_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _rz_vue_qrcode_vue_vue_type_template_id_25ed3360___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _rz_vue_qrcode_vue_vue_type_template_id_25ed3360___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "src/components/RzCode/rz-vue-qrcode.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./src/components/RzCode/rz-vue-qrcode.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./src/components/RzCode/rz-vue-qrcode.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_2_node_modules_vue_loader_lib_index_js_vue_loader_options_rz_vue_qrcode_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--2!../../../node_modules/vue-loader/lib??vue-loader-options!./rz-vue-qrcode.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/components/RzCode/rz-vue-qrcode.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_2_node_modules_vue_loader_lib_index_js_vue_loader_options_rz_vue_qrcode_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./src/components/RzCode/rz-vue-qrcode.vue?vue&type=template&id=25ed3360&":
+/*!********************************************************************************!*\
+  !*** ./src/components/RzCode/rz-vue-qrcode.vue?vue&type=template&id=25ed3360& ***!
+  \********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_rz_vue_qrcode_vue_vue_type_template_id_25ed3360___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./rz-vue-qrcode.vue?vue&type=template&id=25ed3360& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/RzCode/rz-vue-qrcode.vue?vue&type=template&id=25ed3360&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_rz_vue_qrcode_vue_vue_type_template_id_25ed3360___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_rz_vue_qrcode_vue_vue_type_template_id_25ed3360___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
 /***/ "./src/components/Timer/index.js":
 /*!***************************************!*\
   !*** ./src/components/Timer/index.js ***!
@@ -11053,90 +11141,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./src/components/VueQr/index.js":
-/*!***************************************!*\
-  !*** ./src/components/VueQr/index.js ***!
-  \***************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _rz_vue_qrcode_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./rz-vue-qrcode.vue */ "./src/components/VueQr/rz-vue-qrcode.vue");
-
-/* harmony default export */ __webpack_exports__["default"] = (_rz_vue_qrcode_vue__WEBPACK_IMPORTED_MODULE_0__["default"]);
-
-/***/ }),
-
-/***/ "./src/components/VueQr/rz-vue-qrcode.vue":
-/*!************************************************!*\
-  !*** ./src/components/VueQr/rz-vue-qrcode.vue ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _rz_vue_qrcode_vue_vue_type_template_id_5669b4dc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./rz-vue-qrcode.vue?vue&type=template&id=5669b4dc& */ "./src/components/VueQr/rz-vue-qrcode.vue?vue&type=template&id=5669b4dc&");
-/* harmony import */ var _rz_vue_qrcode_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./rz-vue-qrcode.vue?vue&type=script&lang=js& */ "./src/components/VueQr/rz-vue-qrcode.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _rz_vue_qrcode_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _rz_vue_qrcode_vue_vue_type_template_id_5669b4dc___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _rz_vue_qrcode_vue_vue_type_template_id_5669b4dc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "src/components/VueQr/rz-vue-qrcode.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./src/components/VueQr/rz-vue-qrcode.vue?vue&type=script&lang=js&":
-/*!*************************************************************************!*\
-  !*** ./src/components/VueQr/rz-vue-qrcode.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_2_node_modules_vue_loader_lib_index_js_vue_loader_options_rz_vue_qrcode_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--2!../../../node_modules/vue-loader/lib??vue-loader-options!./rz-vue-qrcode.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./src/components/VueQr/rz-vue-qrcode.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_2_node_modules_vue_loader_lib_index_js_vue_loader_options_rz_vue_qrcode_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./src/components/VueQr/rz-vue-qrcode.vue?vue&type=template&id=5669b4dc&":
-/*!*******************************************************************************!*\
-  !*** ./src/components/VueQr/rz-vue-qrcode.vue?vue&type=template&id=5669b4dc& ***!
-  \*******************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_rz_vue_qrcode_vue_vue_type_template_id_5669b4dc___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./rz-vue-qrcode.vue?vue&type=template&id=5669b4dc& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./src/components/VueQr/rz-vue-qrcode.vue?vue&type=template&id=5669b4dc&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_rz_vue_qrcode_vue_vue_type_template_id_5669b4dc___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_rz_vue_qrcode_vue_vue_type_template_id_5669b4dc___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -11151,7 +11155,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Page_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/Page/index */ "./src/components/Page/index.js");
 /* harmony import */ var _components_Timer_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Timer/index */ "./src/components/Timer/index.js");
 /* harmony import */ var _components_CountUp__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/CountUp */ "./src/components/CountUp/index.js");
-/* harmony import */ var _components_VueQr__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/VueQr */ "./src/components/VueQr/index.js");
+/* harmony import */ var _components_RzCode__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/RzCode */ "./src/components/RzCode/index.js");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
@@ -11164,7 +11168,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
-var components = [_components_Page_index__WEBPACK_IMPORTED_MODULE_1__["default"], _components_Timer_index__WEBPACK_IMPORTED_MODULE_2__["default"], _components_CountUp__WEBPACK_IMPORTED_MODULE_3__["default"], _components_VueQr__WEBPACK_IMPORTED_MODULE_4__["default"]],
+var components = [_components_Page_index__WEBPACK_IMPORTED_MODULE_1__["default"], _components_Timer_index__WEBPACK_IMPORTED_MODULE_2__["default"], _components_CountUp__WEBPACK_IMPORTED_MODULE_3__["default"], _components_RzCode__WEBPACK_IMPORTED_MODULE_4__["default"]],
     install = function install(Vue) {
   components.forEach(function (component) {
     Vue.component(component.name, component);

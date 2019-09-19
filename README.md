@@ -113,7 +113,7 @@ components: {
 ### QrCode 二维码
 > 原组件 vue-qr  github  https://github.com/Binaryify/vue-qr  更多详细 请访问 [vue-qr](https://github.com/Binaryify/vue-qr)
 ```js
-<qr-code :text="'https://roc-zhou.github.io/rz-vue-module/'"></qr-code>
+<RzCode :text="'https://roc-zhou.github.io/rz-vue-module/'"></RzCode>
 ```
 #### props 
 |     属性      |              说明              |  类型   | 默认值 |
@@ -131,6 +131,7 @@ components: {
 |    logoBackgroundColor     | Logo 背景色,需要设置 logo margin | String  | '' |
 |    logoCornerRadius     | LOGO 标识及其边框的圆角半径, 默认为0 | Number  | 0 |
 |    whiteMargin     | 若设为 true, 背景图外将绘制白色边框 | Boolean  | true |
+|   dotScale  | 数据区域点缩小比例,默认为1  (0 < scale < 1.0) | Number | 1 |
 
 #### events
 | 事件名 |   说明   |    返回值     |

@@ -6,7 +6,6 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 const getComponentEntries = require('./build/util')
 
 const NODE_ENV = process.env.NODE_ENV
-const PORT = process.env.PORT && Number(process.env.PORT)
 
 const demoPage = false
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="Qrcode justify-center">
+  <div class="RzCode justify-center">
     <vue-qr
       :text="text"
       :correctLevel="correctLevel"
@@ -14,7 +14,8 @@
       :logoBackgroundColor="logoBackgroundColor"
       :logoCornerRadius="logoCornerRadius"
       :whiteMargin="whiteMargin"
-      ::callback="test"
+      :callback="test"
+      :dotScale="dotScale"
     ></vue-qr>
   </div>
 </template>
@@ -23,7 +24,7 @@
 import VueQr from "vue-qr";
 import { type } from "os";
 export default {
-  name: "QrCode",
+  name: "RzCode",
   props: {
     // 欲编码的内容
     text: {
@@ -90,6 +91,11 @@ export default {
     whiteMargin: {
       type: Boolean,
       default: true
+    },
+    // 数据区域点缩小比例,默认为0.35  (0 < scale < 1.0)
+    dotScale:{
+      type: Number,
+      default: 1
     }
   },
   components: { VueQr },
